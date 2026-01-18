@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Instagram Automation Farm</title>
+
+  <!-- Shared modal CSS -->
+  <link rel="stylesheet" href="project-modal.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="modal-page">
+    <div class="modal-card">
+
+      <!-- Close -->
+      <a href="index.html#projects" class="close-btn">×</a>
+
+      <!-- Header -->
+      <div class="modal-header">
+        <span class="tag">Enterprise Automation</span>
+        <h1>Instagram Social Media Marketing Farm</h1>
+        <p class="subtitle">
+          A multi-device, multi-clone automation engine designed to execute large-scale Instagram
+          actions intelligently using phones, time slots, and dynamic scheduling.
+        </p>
+      </div>
+
+      <!-- Overview -->
+      <section>
+        <h3>Overview</h3>
+        <p>
+          This system performs Instagram actions such as likes, saves, comments, and combined
+          interactions across multiple Android phones and multiple Instagram clones per device.
+          Tasks are fetched automatically from an external SSM panel and executed in a controlled,
+          scalable, and fault-tolerant manner.
+        </p>
+      </section>
+
+      <!-- Core Capabilities -->
+      <section>
+        <h3>Core Capabilities</h3>
+        <ul>
+          <li>Multi-phone, multi-clone task execution</li>
+          <li>Quantity-based task distribution across devices</li>
+          <li>Automatic duplicate-prevention per clone & post</li>
+          <li>Smart fallback when a clone fails</li>
+          <li>Warm-up routines when no tasks are available</li>
+          <li>Continuous polling for new jobs every minute</li>
+        </ul>
+      </section>
+
+      <!-- Automation Flow -->
+      <section>
+        <h3>Automation Flow</h3>
+        <ul>
+          <li>Orders are fetched from the SSM panel at fixed intervals</li>
+          <li>Jobs are stored locally and split based on required quantity</li>
+          <li>Available phones, clones, and time slots are selected</li>
+          <li>Each execution runs on a unique clone & slot</li>
+          <li>Status updates are sent back to the SSM panel on completion</li>
+        </ul>
+      </section>
+
+      <!-- Scheduling Logic -->
+      <section>
+        <h3>Scheduling & Reliability</h3>
+        <p>
+          The system uses a time-slot based scheduler where each clone is assigned defined execution
+          windows. If a task fails on a clone, the scheduler automatically retries on another
+          available clone without repeating interactions.
+        </p>
+      </section>
+
+      <!-- Architecture -->
+      <section>
+        <h3>System Architecture</h3>
+        <ul>
+          <li>SSM Panel → Order ingestion layer</li>
+          <li>Local database → Phones, clones, slots, jobs, executions</li>
+          <li>Execution engine → Device selection, fallback, warm-up</li>
+        </ul>
+      </section>
+
+      <!-- Tech Stack -->
+      <section>
+        <h3>Tech Stack</h3>
+        <div class="stack">
+          <span>Python</span>
+          <span>ADB</span>
+          <span>Android Automation</span>
+          <span>Supabase / PostgreSQL</span>
+          <span>Scheduler Engine</span>
+          <span>SSM Panel Integration</span>
+        </div>
+      </section>
+
+      <!-- Use Cases -->
+      <section>
+        <h3>Use Cases</h3>
+        <p>
+          Designed for social media marketing teams and automation specialists who need reliable,
+          large-scale Instagram execution across real devices while maintaining safety, isolation,
+          and consistency.
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+</body>
+</html>

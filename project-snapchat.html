@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snapchat Web Messaging Automation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Modal CSS (shared across all projects) -->
+  <link rel="stylesheet" href="project-modal.css">
+</head>
+<body>
+
+  <div class="modal-page">
+
+    <div class="modal-card">
+
+      <!-- Close -->
+      <button class="close-btn" onclick="history.back()">×</button>
+
+      <!-- Header -->
+      <header class="modal-header">
+        <span class="tag">Web Automation</span>
+        <h1>Snapchat Web Messaging Automation System</h1>
+        <p class="subtitle">
+          A desktop-based automation system for managing Snapchat Web
+          conversations, supporting both manual messaging and AI-powered
+          automated replies.
+        </p>
+      </header>
+
+      <!-- Overview -->
+      <section>
+        <h3>Project Overview</h3>
+        <p>
+          This project is a web-based messaging automation system built on top
+          of Snapchat Web. It allows users to send messages manually to specific
+          usernames or automatically manage incoming conversations at scale.
+          All message activity is persisted for tracking, analysis, and follow-ups.
+        </p>
+      </section>
+
+      <!-- Core Capabilities -->
+      <section>
+        <h3>Core Capabilities</h3>
+        <ul>
+          <li>Manual message sending to specific Snapchat usernames</li>
+          <li>Automated scanning of full DM conversation lists</li>
+          <li>Detection of latest incoming messages</li>
+          <li>AI-generated replies using OpenAI</li>
+          <li>Conversation history persistence</li>
+          <li>Desktop-level automation via Electron</li>
+        </ul>
+      </section>
+
+      <!-- Manual Messaging -->
+      <section>
+        <h3>Manual Messaging Flow</h3>
+        <p>
+          In manual mode, the user enters a Snapchat username and a message
+          through the system interface. The automation layer launches Snapchat Web,
+          navigates to the target user’s chat, sends the message, and stores the
+          message details in the database under the conversations table.
+        </p>
+      </section>
+
+      <!-- Automated Messaging -->
+      <section>
+        <h3>Automated Messaging Flow</h3>
+        <p>
+          In automated mode, the system opens the full DM list and iterates through
+          each conversation. It inspects the latest message to determine whether
+          it was sent by the other user. If so, the full chat context is saved,
+          passed to the AI engine, and an appropriate response is generated and
+          sent automatically on Snapchat Web.
+        </p>
+      </section>
+
+      <!-- Data Handling -->
+      <section>
+        <h3>Data Storage & Tracking</h3>
+        <p>
+          All conversation data, including sender, message content, timestamps,
+          and reply status, is stored in a structured database. This enables
+          historical tracking, response auditing, and future message analysis.
+        </p>
+      </section>
+
+      <!-- Stack -->
+      <section>
+        <h3>Technology Stack</h3>
+        <div class="stack">
+          <span>Python</span>
+          <span>Electron.js</span>
+          <span>Puppeteer</span>
+          <span>Snapchat Web</span>
+          <span>OpenAI APIs</span>
+          <span>Database Persistence</span>
+        </div>
+      </section>
+
+      <!-- Architecture -->
+      <section>
+        <h3>System Architecture</h3>
+        <p>
+          The desktop application serves as the orchestration layer, managing
+          browser sessions and automation logic. Puppeteer handles interaction
+          with Snapchat Web, while the Python backend coordinates workflows,
+          AI responses, and database operations. This separation allows for
+          scalable messaging automation without relying on unofficial APIs.
+        </p>
+      </section>
+
+      <!-- Reliability -->
+      <section>
+        <h3>Reliability & Safeguards</h3>
+        <p>
+          The system includes checks to avoid duplicate replies, ensures that
+          only inbound messages trigger automated responses, and gracefully
+          handles session timeouts or UI changes in Snapchat Web.
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Telegram News Bot Automation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Same fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project-modal.css">
+</head>
+<body>
+
+  <!-- Overlay -->
+  <div class="modal-page">
+
+    <div class="modal-card">
+
+      <!-- Close -->
+      <button class="close-btn" onclick="history.back()">×</button>
+
+      <!-- Header -->
+      <header class="modal-header">
+        <span class="tag">Automation System</span>
+        <h1>Telegram News Bot Automation</h1>
+        <p class="subtitle">
+          End-to-end automated pipeline for collecting, translating,
+          filtering, and publishing news to Telegram channels.
+        </p>
+      </header>
+
+      <!-- Content -->
+      <section>
+        <h3>Project Overview</h3>
+        <p>
+          The Telegram News Bot Automation System is designed to fully
+          automate content curation for Telegram-based audiences.
+          It integrates web scraping, AI translation, quota management,
+          and scheduled posting into a single scalable system.
+        </p>
+      </section>
+
+      <section>
+        <h3>Core Features</h3>
+        <ul>
+          <li>RSS & session-based web scraping</li>
+          <li>AI-powered translation and text cleaning</li>
+          <li>Keyword & category-based filtering</li>
+          <li>Quota-controlled publishing</li>
+          <li>Automated scheduling after defined time windows</li>
+          <li>Detailed logs and history tracking</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Technology Stack</h3>
+        <div class="stack">
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>Telegram Bot API</span>
+          <span>Supabase</span>
+          <span>OpenAI APIs</span>
+          <span>RSS Parsing</span>
+        </div>
+      </section>
+
+      <section>
+        <h3>System Architecture</h3>
+        <p>
+          Articles are fetched from multiple sources and stored with metadata.
+          They are filtered using category-keyword logic, translated if required,
+          queued based on quotas, and dispatched through the Telegram bot.
+          All actions are logged in the database for monitoring and auditing.
+        </p>
+      </section>
+
+      <section>
+        <h3>Admin Dashboard</h3>
+        <p>
+          A web-based dashboard allows administrators to configure sources,
+          categories, keywords, API tokens, cookies, and quotas.
+          All configurations are persisted without redeploying the system.
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+</body>
+</html>
