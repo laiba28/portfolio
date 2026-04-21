@@ -2,22 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram Automation Farm</title>
-
-  <!-- Shared modal CSS -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪪</text></svg>">
   <link rel="stylesheet" href="project-modal.css">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="modal-page">
     <div class="modal-card">
+      <a href="index.html#projects" class="close-btn">&times;</a>
 
-      <!-- Close -->
-      <a href="index.html#projects" class="close-btn">×</a>
-
-      <!-- Header -->
       <div class="modal-header">
         <span class="tag">Enterprise Automation</span>
         <h1>Instagram Social Media Marketing Farm</h1>
@@ -27,9 +23,8 @@
         </p>
       </div>
 
-      <!-- Overview -->
       <section>
-        <h3>Overview</h3>
+        <h3>Project Overview</h3>
         <p>
           This system performs Instagram actions such as likes, saves, comments, and combined
           interactions across multiple Android phones and multiple Instagram clones per device.
@@ -38,54 +33,51 @@
         </p>
       </section>
 
-      <!-- Core Capabilities -->
       <section>
-        <h3>Core Capabilities</h3>
+        <h3>Purpose &amp; Scope</h3>
+        <p>
+          The purpose of this system is to automate large-scale Instagram execution across real
+          devices while maintaining scheduling control, clone isolation, and recovery handling.
+          Its scope includes order ingestion, job splitting, device and slot allocation, execution
+          tracking, fallback routing, and warm-up automation.
+        </p>
+      </section>
+
+      <section>
+        <h3>Core Features</h3>
         <ul>
           <li>Multi-phone, multi-clone task execution</li>
           <li>Quantity-based task distribution across devices</li>
-          <li>Automatic duplicate-prevention per clone & post</li>
+          <li>Automatic duplicate-prevention per clone and post</li>
           <li>Smart fallback when a clone fails</li>
           <li>Warm-up routines when no tasks are available</li>
           <li>Continuous polling for new jobs every minute</li>
         </ul>
       </section>
 
-      <!-- Automation Flow -->
       <section>
-        <h3>Automation Flow</h3>
+        <h3>Automation Workflow</h3>
         <ul>
           <li>Orders are fetched from the SSM panel at fixed intervals</li>
           <li>Jobs are stored locally and split based on required quantity</li>
           <li>Available phones, clones, and time slots are selected</li>
-          <li>Each execution runs on a unique clone & slot</li>
+          <li>Each execution runs on a unique clone and slot</li>
           <li>Status updates are sent back to the SSM panel on completion</li>
         </ul>
       </section>
 
-      <!-- Scheduling Logic -->
       <section>
-        <h3>Scheduling & Reliability</h3>
+        <h3>System Architecture</h3>
         <p>
-          The system uses a time-slot based scheduler where each clone is assigned defined execution
-          windows. If a task fails on a clone, the scheduler automatically retries on another
-          available clone without repeating interactions.
+          The architecture combines an external order ingestion layer, a local execution database,
+          and a scheduler-driven automation engine. Time-slot logic assigns each clone controlled
+          execution windows, and fallback routing moves failed jobs to other available clones without
+          repeating interactions.
         </p>
       </section>
 
-      <!-- Architecture -->
       <section>
-        <h3>System Architecture</h3>
-        <ul>
-          <li>SSM Panel → Order ingestion layer</li>
-          <li>Local database → Phones, clones, slots, jobs, executions</li>
-          <li>Execution engine → Device selection, fallback, warm-up</li>
-        </ul>
-      </section>
-
-      <!-- Tech Stack -->
-      <section>
-        <h3>Tech Stack</h3>
+        <h3>Technology Stack</h3>
         <div class="stack">
           <span>Python</span>
           <span>ADB</span>
@@ -96,7 +88,6 @@
         </div>
       </section>
 
-      <!-- Use Cases -->
       <section>
         <h3>Use Cases</h3>
         <p>
@@ -105,7 +96,6 @@
           and consistency.
         </p>
       </section>
-
     </div>
   </div>
 

@@ -2,22 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify Clone Bot</title>
-
-  <!-- Shared modal CSS -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪪</text></svg>">
   <link rel="stylesheet" href="project-modal.css">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="modal-page">
     <div class="modal-card">
+      <a href="index.html#projects" class="close-btn">&times;</a>
 
-      <!-- Close -->
-      <a href="index.html#projects" class="close-btn">×</a>
-
-      <!-- Header -->
       <div class="modal-header">
         <span class="tag">Automation</span>
         <h1>Spotify Clone Bot</h1>
@@ -27,9 +23,8 @@
         </p>
       </div>
 
-      <!-- Content -->
       <section>
-        <h3>Overview</h3>
+        <h3>Project Overview</h3>
         <p>
           This bot provides a streamlined way to create multiple independent Spotify app instances
           without manual cloning steps. A web interface is used to trigger the automation, and within
@@ -38,7 +33,16 @@
       </section>
 
       <section>
-        <h3>Key Capabilities</h3>
+        <h3>Purpose &amp; Scope</h3>
+        <p>
+          The purpose of this project is to remove the repetitive manual work involved in cloning
+          and preparing isolated Spotify app builds. Its scope includes clone generation, package
+          isolation, rebuild and signing steps, and delivery through a web-based workflow.
+        </p>
+      </section>
+
+      <section>
+        <h3>Core Features</h3>
         <ul>
           <li>Unlimited Spotify clone generation</li>
           <li>Web-based one-click workflow</li>
@@ -49,9 +53,9 @@
       </section>
 
       <section>
-        <h3>Automation Flow</h3>
+        <h3>Automation Workflow</h3>
         <ul>
-          <li>User clicks “Create Clone” from the web interface</li>
+          <li>User clicks "Create Clone" from the web interface</li>
           <li>Original app package is processed automatically</li>
           <li>Identifiers and permissions are isolated</li>
           <li>App is rebuilt, optimized, and signed</li>
@@ -60,7 +64,16 @@
       </section>
 
       <section>
-        <h3>Tech Stack</h3>
+        <h3>System Architecture</h3>
+        <p>
+          The system combines a web-triggered control layer with an automated APK processing pipeline.
+          Once requested, the workflow isolates package identifiers, rebuilds the application, signs
+          the output, and prepares a ready-to-install clone without manual APK handling.
+        </p>
+      </section>
+
+      <section>
+        <h3>Technology Stack</h3>
         <div class="stack">
           <span>Python</span>
           <span>ADB</span>
@@ -79,7 +92,6 @@
           identities are needed.
         </p>
       </section>
-
     </div>
   </div>
 

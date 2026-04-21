@@ -4,22 +4,16 @@
   <meta charset="UTF-8">
   <title>Snapchat Mobile Bot Automation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Fonts -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪪</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Shared modal styling -->
   <link rel="stylesheet" href="project-modal.css">
 </head>
 <body>
 
   <div class="modal-page">
     <div class="modal-card">
+      <button class="close-btn" onclick="history.back()">&times;</button>
 
-      <!-- Close Button -->
-      <button class="close-btn" onclick="history.back()">×</button>
-
-      <!-- Header -->
       <header class="modal-header">
         <span class="tag">Mobile Automation</span>
         <h1>Snapchat Mobile Bot Automation (Appilot)</h1>
@@ -29,7 +23,6 @@
         </p>
       </header>
 
-      <!-- Overview -->
       <section>
         <h3>Project Overview</h3>
         <p>
@@ -40,7 +33,15 @@
         </p>
       </section>
 
-      <!-- Core Features -->
+      <section>
+        <h3>Purpose &amp; Scope</h3>
+        <p>
+          The purpose of this project is to automate Snapchat mobile activity with human-like behavior
+          on real app interfaces. Its scope includes login recovery, engagement automation, friend request
+          handling, randomized interactions, and mobile-side safeguard logic.
+        </p>
+      </section>
+
       <section>
         <h3>Core Features</h3>
         <ul>
@@ -52,39 +53,25 @@
         </ul>
       </section>
 
-      <!-- Login Handling -->
       <section>
-        <h3>Login & Error Handling</h3>
+        <h3>Automation Workflow</h3>
         <p>
-          The bot automatically opens the Snapchat app and handles
-          login-related edge cases such as invalid sessions, temporary
-          blocks, and UI-based verification screens. It detects failure
-          states and safely retries or exits based on predefined rules.
+          The bot launches Snapchat, validates session state, handles login-related edge cases,
+          navigates into Spotlight for controlled engagement, and then processes incoming friend
+          requests. Timing, gestures, and engagement ratios are randomized throughout the flow to
+          reduce repetitive behavior.
         </p>
       </section>
 
-      <!-- Spotlight Automation -->
       <section>
-        <h3>Spotlight Engagement Automation</h3>
+        <h3>System Architecture</h3>
         <p>
-          After successful login, the bot navigates to Snapchat Spotlight,
-          scrolls through content naturally, and performs likes based on
-          a randomized ratio. Interaction timing, scroll depth, and
-          engagement frequency are dynamically adjusted to avoid patterns.
+          The automation runs through Appilot as the mobile execution layer, coordinating device or
+          emulator control with UI-state checks and human-emulation logic. Each action is driven by
+          predefined rules for retries, pacing, and recovery when the app enters unexpected states.
         </p>
       </section>
 
-      <!-- Friend Management -->
-      <section>
-        <h3>Friend Request Management</h3>
-        <p>
-          The system also navigates to the friend list and automatically
-          accepts incoming friend requests. Actions are spaced with
-          realistic delays and UI checks to maintain human-like behavior.
-        </p>
-      </section>
-
-      <!-- Tech Stack -->
       <section>
         <h3>Technology Stack</h3>
         <div class="stack">
@@ -96,17 +83,13 @@
         </div>
       </section>
 
-      <!-- Reliability -->
       <section>
-        <h3>Stability & Safeguards</h3>
+        <h3>Use Cases</h3>
         <p>
-          Randomized action timing, UI state validation, and proportional
-          engagement rules are used to reduce detection risks. The bot
-          avoids aggressive behavior and gracefully handles unexpected
-          UI changes or network issues.
+          Built for Snapchat engagement automation, account workflow handling, and mobile bot scenarios
+          that require real-device interaction patterns instead of browser-based automation.
         </p>
       </section>
-
     </div>
   </div>
 

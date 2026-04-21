@@ -4,22 +4,16 @@
   <meta charset="UTF-8">
   <title>Telegram News Bot Automation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Same fonts -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪪</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="project-modal.css">
 </head>
 <body>
 
-  <!-- Overlay -->
   <div class="modal-page">
-
     <div class="modal-card">
+      <button class="close-btn" onclick="history.back()">&times;</button>
 
-      <!-- Close -->
-      <button class="close-btn" onclick="history.back()">×</button>
-
-      <!-- Header -->
       <header class="modal-header">
         <span class="tag">Automation System</span>
         <h1>Telegram News Bot Automation</h1>
@@ -29,7 +23,6 @@
         </p>
       </header>
 
-      <!-- Content -->
       <section>
         <h3>Project Overview</h3>
         <p>
@@ -41,15 +34,43 @@
       </section>
 
       <section>
+        <h3>Purpose &amp; Scope</h3>
+        <p>
+          The purpose of this system is to automate Telegram news publishing from source collection
+          through final delivery. Its scope includes scraping, translation, filtering, quota handling,
+          scheduling, dashboard configuration, and publication tracking.
+        </p>
+      </section>
+
+      <section>
         <h3>Core Features</h3>
         <ul>
-          <li>RSS & session-based web scraping</li>
+          <li>RSS and session-based web scraping</li>
           <li>AI-powered translation and text cleaning</li>
-          <li>Keyword & category-based filtering</li>
+          <li>Keyword and category-based filtering</li>
           <li>Quota-controlled publishing</li>
           <li>Automated scheduling after defined time windows</li>
           <li>Detailed logs and history tracking</li>
         </ul>
+      </section>
+
+      <section>
+        <h3>Automation Workflow</h3>
+        <p>
+          Articles are fetched from multiple sources and stored with metadata.
+          They are filtered using category-keyword logic, translated if required,
+          queued based on quotas, and dispatched through the Telegram bot.
+          All actions are logged in the database for monitoring and auditing.
+        </p>
+      </section>
+
+      <section>
+        <h3>System Architecture</h3>
+        <p>
+          The architecture combines source ingestion, AI-assisted content processing, publishing queues,
+          and an admin dashboard for runtime configuration. Administrators can manage sources, categories,
+          keywords, API tokens, cookies, and quotas without redeploying the system.
+        </p>
       </section>
 
       <section>
@@ -65,24 +86,12 @@
       </section>
 
       <section>
-        <h3>System Architecture</h3>
+        <h3>Use Cases</h3>
         <p>
-          Articles are fetched from multiple sources and stored with metadata.
-          They are filtered using category-keyword logic, translated if required,
-          queued based on quotas, and dispatched through the Telegram bot.
-          All actions are logged in the database for monitoring and auditing.
+          Built for automated news channels, multilingual content pipelines, editorial automation,
+          and Telegram publishing systems that need configurable scheduling and filtering.
         </p>
       </section>
-
-      <section>
-        <h3>Admin Dashboard</h3>
-        <p>
-          A web-based dashboard allows administrators to configure sources,
-          categories, keywords, API tokens, cookies, and quotas.
-          All configurations are persisted without redeploying the system.
-        </p>
-      </section>
-
     </div>
   </div>
 

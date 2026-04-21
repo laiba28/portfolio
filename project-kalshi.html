@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalshi Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪪</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project-modal.css">
+</head>
+<body>
+
+  <div class="modal-page">
+    <div class="modal-card">
+      <button class="close-btn" onclick="history.back()">&times;</button>
+
+      <header class="modal-header">
+        <span class="tag">In Progress</span>
+        <h1>Kalshi Bot</h1>
+        <p class="subtitle">
+          Real-time crypto prediction market trading system for Kalshi, built to monitor live prices,
+          generate trading signals, and automate order execution through a web dashboard.
+        </p>
+      </header>
+
+      <section>
+        <h3>Project Overview</h3>
+        <p>
+          This project is a real-time crypto prediction market trading system built for Kalshi.
+          It monitors live crypto prices from Coinbase, compares them against Kalshi market structures,
+          calculates trading signals, and automates order execution through a web-based control dashboard.
+          All pricing formulas, edge logic, and trading rules were provided by the client; my role was to
+          design and implement the system around those requirements.
+        </p>
+      </section>
+
+      <section>
+        <h3>Purpose &amp; Scope</h3>
+        <p>
+          The system is designed to turn fast-moving crypto market data into actionable Kalshi trading
+          decisions. Its scope includes live data ingestion, market matching, signal generation, fair-value
+          comparison, order planning, execution monitoring, chart-based trade filtering, and risk-controlled automation.
+        </p>
+      </section>
+
+      <section>
+        <h3>Core Features</h3>
+        <ul>
+          <li>Real-time Coinbase spot price streaming</li>
+          <li>Kalshi market discovery and market rollover handling</li>
+          <li>Strike, index, and YES/NO market decomposition</li>
+          <li>Client-defined signal and edge calculations</li>
+          <li>Live order book parsing and execution planning</li>
+          <li>Automated PROBE and SCALE ladder entries</li>
+          <li>Risk controls, cooldowns, retries, and stop-add logic</li>
+          <li>Indicator-based chart filter using EMA9, EMA21, CCI20, and ADX14</li>
+          <li>Web dashboard for metrics, bot controls, and manual order placement</li>
+          <li>Dockerized deployment support</li>
+          <li>Rust-accelerated Kalshi client for faster signing and order submission</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Automation Workflow</h3>
+        <p>
+          The workflow streams live Coinbase trades, fetches active Kalshi crypto markets, computes trading metrics
+          using the client's formulas, generates executable signals such as PROBE and SCALE entries, validates them
+          against order book depth and filters, places aggressive limit orders, and monitors fills, retries, scaling,
+          and stop conditions in real time.
+        </p>
+      </section>
+
+      <section>
+        <h3>System Architecture</h3>
+        <p>
+          The project follows a modular, event-driven trading architecture with separate data, analytics,
+          execution, and control layers. It combines real-time Coinbase WebSocket data, Kalshi market data
+          and order books, CF Benchmarks reference pricing, and the client's fair-value and edge formulas
+          inside a dashboard-driven automation system.
+        </p>
+      </section>
+
+      <section>
+        <h3>Technology Stack</h3>
+        <div class="stack">
+          <span>Python</span>
+          <span>Flask</span>
+          <span>WebSocket</span>
+          <span>Requests</span>
+          <span>Coinbase Advanced Trade WebSocket API</span>
+          <span>Kalshi API</span>
+          <span>CF Benchmarks</span>
+          <span>Rust</span>
+          <span>PyO3</span>
+          <span>Docker</span>
+          <span>Docker Compose</span>
+          <span>NumPy</span>
+          <span>Pandas</span>
+          <span>Cryptography</span>
+        </div>
+      </section>
+
+      <section>
+        <h3>Use Cases</h3>
+        <p>
+          Built for automated trading on Kalshi crypto prediction markets, real-time signal monitoring,
+          execution research for event-driven strategies, and trading dashboards that support both automation
+          and manual intervention.
+        </p>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>

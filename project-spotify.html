@@ -4,23 +4,16 @@
   <meta charset="UTF-8">
   <title>Spotify Bot Automation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Fonts -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪪</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Modal CSS (same as Telegram project) -->
   <link rel="stylesheet" href="project-modal.css">
 </head>
 <body>
 
   <div class="modal-page">
-
     <div class="modal-card">
+      <button class="close-btn" onclick="history.back()">&times;</button>
 
-      <!-- Close -->
-      <button class="close-btn" onclick="history.back()">×</button>
-
-      <!-- Header -->
       <header class="modal-header">
         <span class="tag">Mobile Automation</span>
         <h1>Spotify Bot Automation System</h1>
@@ -30,7 +23,6 @@
         </p>
       </header>
 
-      <!-- Overview -->
       <section>
         <h3>Project Overview</h3>
         <p>
@@ -38,14 +30,13 @@
           actions directly on Android devices. By installing a lightweight APK
           and using the AppPilot web console, users can schedule and manage
           automated tasks such as opening Spotify, selecting playlists,
-          and triggering play or shuffle actions — without installing Java
+          and triggering play or shuffle actions without installing Java
           or additional tooling on their machines.
         </p>
       </section>
 
-      <!-- Purpose -->
       <section>
-        <h3>Purpose & Scope</h3>
+        <h3>Purpose &amp; Scope</h3>
         <p>
           This project was built to simplify large-scale Spotify automation
           while maintaining ease of use. The system abstracts device-level
@@ -54,7 +45,6 @@
         </p>
       </section>
 
-      <!-- Features -->
       <section>
         <h3>Core Features</h3>
         <ul>
@@ -67,7 +57,6 @@
         </ul>
       </section>
 
-      <!-- Workflow -->
       <section>
         <h3>Automation Workflow</h3>
         <ul>
@@ -79,7 +68,16 @@
         </ul>
       </section>
 
-      <!-- Stack -->
+      <section>
+        <h3>System Architecture</h3>
+        <p>
+          The system consists of two main components: a web-based orchestration
+          layer and a device-level execution layer. Users interact exclusively
+          with the web console, while the installed APK handles real-time
+          interaction with the Spotify app using accessibility APIs.
+        </p>
+      </section>
+
       <section>
         <h3>Technology Stack</h3>
         <div class="stack">
@@ -91,39 +89,13 @@
         </div>
       </section>
 
-      <!-- Architecture -->
       <section>
-        <h3>System Architecture</h3>
+        <h3>Use Cases</h3>
         <p>
-          The system consists of two main components: a web-based orchestration
-          layer and a device-level execution layer. Users interact exclusively
-          with the web console, while the installed APK handles real-time
-          interaction with the Spotify app using accessibility APIs.
+          Built for Spotify playback automation, scheduled device-side execution, and multi-session
+          environments where users need browser-based control over Android automation tasks.
         </p>
       </section>
-
-      <!-- API -->
-      <section>
-        <h3>API Interaction</h3>
-        <p>
-          Tasks are created using a POST-based API, passing configuration
-          parameters such as package IDs, session settings, target device,
-          and scheduled execution time. The API responds with a task ID
-          and execution status for tracking and monitoring.
-        </p>
-      </section>
-
-      <!-- Reliability -->
-      <section>
-        <h3>Reliability & Edge Handling</h3>
-        <p>
-          The automation logic includes validation checks to ensure Spotify
-          is installed, logged in, and has accessible playlists available.
-          Session-based execution prevents overload and allows scalable,
-          predictable automation across multiple clones and devices.
-        </p>
-      </section>
-
     </div>
   </div>
 
